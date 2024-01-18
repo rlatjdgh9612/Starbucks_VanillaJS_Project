@@ -1,3 +1,9 @@
-
+div {
+  padding: 10px;
+}
+div h1 {
+  color: red;
+  font-size: 100px;
+}
 
 /*# sourceMappingURL=starbucks.css.map */
