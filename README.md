@@ -13,8 +13,13 @@
 - Git & Github(GitFlow)
 - npx
 
+## GitFlow
+- main : 스타벅스 메인 페이지
+- feature/starbucks_MenuBar : 스타벅스 상단 메뉴바
+
 ## 프로젝트 버전
 - 0.00.1 : Add. Starbucks 초기셋팅 : 완료
 - 0.10.1 : Add. Starbucks 이미지 추가 및 SCSS Test : 완료
 - 0.11.1 : Fix. Test 태그 제거, Add. 헤더 및 헤더 로고 영역 추가 : 완료
-- 0.11.2 : 
+- 0.11.2 : Add. Header sub-menu 추가, Search Bar 기능 추가
+- 
