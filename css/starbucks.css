@@ -68,8 +68,8 @@ body header .inner .sub-menu .search {
   position: relative;
 }
 body header .inner .sub-menu .search input {
-  width: 36px;
-  height: 34px;
+  width: 35px;
+  height: 35px;
   padding: 4px 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
