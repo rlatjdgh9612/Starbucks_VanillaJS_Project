@@ -1,4 +1,6 @@
 # Starbucks_VanillaJS_Project
+
+## 프로젝트 소개
 - Vanilla JavaScript 기반의 스타벅스 클론코딩 프로젝트 입니다.
 
 ## 프로젝트 참여인원
