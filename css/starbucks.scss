@@ -4,112 +4,139 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nanum Gothic, sans-serif";
+}
 
-  header {
-    background-color: #f6f5ef;
-    border-bottom: 1px solid #c8c8c8;
+header {
+  background-color: #f6f5ef;
+  border-bottom: 1px solid #c8c8c8;
 
-    .inner {
-      width: 1100px;
-      height: 120px;
-      margin: 0 auto;
-      position: relative;
+  .inner {
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
 
-      .logo {
-        height: 75px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
+    .logo {
+      height: 75px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
 
-        img {
-          display: block;
+      img {
+        display: block;
+      }
+    }
+
+    .main-menu {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+
+      .item {
+        &:hover {
+          background-color: #2c2a29;
+          color: #669900;
+          border-radius: 6px 6px 0 0;
+          cursor: pointer;
+        }
+
+        .item__name {
+          padding: 10px 20px 34px 20px;
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+        }
+
+        .item__contents {
         }
       }
+    }
 
-      .sub-menu {
+    .sub-menu {
+      display: flex;
+      justify-content: flex-end;
+
+      .menu {
         display: flex;
-        justify-content: flex-end;
+        margin-top: 5px;
+        font-family: Arial, sans-serif;
 
-        .menu {
-          display: flex;
-          margin-top: 5px;
-          font-family: Arial, sans-serif;
-
-          li {
-            position: relative;
-
-            &::before {
-              content: "";
-              display: block;
-              width: 1px;
-              height: 12px;
-              background-color: #e5e5e5;
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              margin: auto;
-            }
-
-            &:first-child {
-              &::before {
-                display: none;
-              }
-            }
-
-            a {
-              display: block;
-              padding: 11px 16px;
-              text-decoration: none;
-              color: #656565;
-              font-size: 12px;
-
-              &:hover {
-                color: #000;
-              }
-            }
-          }
-        }
-
-        .search {
-          height: 34px;
-          margin-top: 7px;
+        li {
           position: relative;
 
-          input {
-            width: 35px;
-            height: 35px;
-            padding: 4px 10px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 4px;
-            outline: none;
-            background-color: #fff;
-            color: #777;
-            font-size: 12px;
-            transition: width 0.4s;
-
-            &:focus {
-              width: 190px;
-              border-color: #669900;
-            }
-          }
-
-          .material-icons {
-            height: 24px;
+          &::before {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 12px;
+            background-color: #e5e5e5;
             position: absolute;
             top: 0;
             bottom: 0;
-            right: 5px;
             margin: auto;
-            transition: 0.4s;
           }
 
-          &.focused {
-            .material-icons {
-              opacity: 0;
+          &:first-child {
+            &::before {
+              display: none;
             }
+          }
+
+          a {
+            display: block;
+            padding: 11px 16px;
+            text-decoration: none;
+            color: #656565;
+            font-size: 12px;
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+
+      .search {
+        height: 34px;
+        margin-top: 7px;
+        position: relative;
+
+        input {
+          width: 35px;
+          height: 35px;
+          padding: 4px 10px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          border-radius: 4px;
+          outline: none;
+          background-color: #fff;
+          color: #777;
+          font-size: 12px;
+          transition: width 0.4s;
+
+          &:focus {
+            width: 190px;
+            border-color: #669900;
+          }
+        }
+
+        .material-icons {
+          height: 24px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 5px;
+          margin: auto;
+          transition: 0.4s;
+        }
+
+        &.focused {
+          .material-icons {
+            opacity: 0;
           }
         }
       }
