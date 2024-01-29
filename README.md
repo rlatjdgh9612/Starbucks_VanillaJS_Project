@@ -26,3 +26,4 @@
 - 0.11.2 : Add. Header sub-menu 추가, Search Bar 기능 추가
 - 0.11.3 : Modify. SCSS Main Menu item 및 메뉴바 버튼 스타일링 수정, Add: Main Menu Button 스타일링 추가
 - 0.11.4 : Add. content menu 생성, Modify. inner 스타일링 수정
+- 0.11.5 : Add. 1차 메뉴바 merge 완료(메뉴바 완성 X)
