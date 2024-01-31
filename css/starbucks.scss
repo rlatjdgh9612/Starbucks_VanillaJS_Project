@@ -13,10 +13,7 @@ body {
       width: 1100px;
       margin: 0 auto;
       position: relative;
-
-      & {
-        height: 120px;
-      }
+      height: 120px;
 
       .logo {
         height: 75px;
@@ -40,38 +37,53 @@ body {
         right: 0;
         z-index: 1;
 
-        .item {
-          &:hover {
-            background-color: #2c2a29;
-            color: #669900;
-            border-radius: 6px 6px 0 0;
-            cursor: pointer;
-
-            .item__contents {
-              display: block;
-            }
-          }
-
-          .item__name {
-            padding: 10px 20px 34px 20px;
-            font-family: Arial, sans-serif;
-            font-size: 13px;
-          }
+        .item:hover {
+          background-color: #2c2a29;
+          color: #669900;
+          border-radius: 6px 6px 0 0;
+          cursor: pointer;
 
           .item__contents {
-            width: 100%;
-            position: fixed;
-            left: 0;
-            display: none;
+            display: block;
+          }
+        }
 
-            .contents__menu {
-              background-color: red;
-              height: 200px;
-            }
+        .item .item__name {
+          padding: 10px 20px 34px 20px;
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+        }
 
-            .contents__texture {
-              background-color: orange;
-              height: 100px;
+        .item .item__contents {
+          width: 100%;
+          position: fixed;
+          left: 0;
+          display: none;
+
+          .contents__menu {
+            background-color: #2c2a29;
+
+            > ul {
+              display: flex;
+              height: auto;
+              padding: 20px 0;
+
+              > li {
+                width: 220px;
+
+                h4 {
+                  padding: 3px 0 12px 0;
+                  font-size: 14px;
+                  color: #fff;
+                }
+
+                ul {
+                  padding: 5px 0;
+                  font-size: 12px;
+                  color: #999;
+                  cursor: pointer;
+                }
+              }
             }
           }
         }
@@ -84,12 +96,11 @@ body {
         .menu {
           display: flex;
           margin-top: 5px;
-          font-family: Arial, sans-serif;
 
           li {
             position: relative;
 
-            &::before {
+            &:before {
               content: "";
               display: block;
               width: 1px;
@@ -101,7 +112,7 @@ body {
               margin: auto;
             }
 
-            &:first-child::before {
+            &:first-child:before {
               display: none;
             }
 
@@ -111,7 +122,6 @@ body {
               text-decoration: none;
               color: #656565;
               font-size: 12px;
-
               &:hover {
                 color: #000;
               }
@@ -151,10 +161,10 @@ body {
             right: 5px;
             margin: auto;
             transition: 0.4s;
+          }
 
-            .focused & {
-              opacity: 0;
-            }
+          .focused & .material-icons {
+            opacity: 0;
           }
         }
       }
